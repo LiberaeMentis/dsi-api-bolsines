@@ -1,0 +1,390 @@
+{
+    "info":  {
+                 "_postman_id":  "996d035b-d9f8-42c3-b784-f1a9446f1cee",
+                 "name":  "DSIBolsines",
+                 "schema":  "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+                 "_exporter_id":  "24623289"
+             },
+    "item":  [
+                 {
+                     "name":  "HealthCheck",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8080/health",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8080",
+                                                 "path":  [
+                                                              "health"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+                                      {
+                                          "name":  "200 ok",
+                                          "originalRequest":  {
+                                                                  "method":  "GET",
+                                                                  "header":  [
+
+                                                                             ],
+                                                                  "url":  {
+                                                                              "raw":  "http://localhost:8080/health",
+                                                                              "protocol":  "http",
+                                                                              "host":  [
+                                                                                           "localhost"
+                                                                                       ],
+                                                                              "port":  "8080",
+                                                                              "path":  [
+                                                                                           "health"
+                                                                                       ]
+                                                                          }
+                                                              },
+                                          "status":  "OK",
+                                          "code":  200,
+                                          "_postman_previewlanguage":  null,
+                                          "header":  [
+                                                         {
+                                                             "key":  "Content-Type",
+                                                             "value":  "application/json"
+                                                         },
+                                                         {
+                                                             "key":  "Transfer-Encoding",
+                                                             "value":  "chunked"
+                                                         },
+                                                         {
+                                                             "key":  "Date",
+                                                             "value":  "Sat, 07 Mar 2026 21:00:07 GMT"
+                                                         },
+                                                         {
+                                                             "key":  "Keep-Alive",
+                                                             "value":  "timeout=60"
+                                                         },
+                                                         {
+                                                             "key":  "Connection",
+                                                             "value":  "keep-alive"
+                                                         }
+                                                     ],
+                                          "cookie":  [
+
+                                                     ],
+                                          "body":  "{\n    \"status\": \"ok\"\n}"
+                                      }
+                                  ]
+                 },
+                 {
+                     "name":  "getBolsinesDisponibles",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8080/api/mock/bolsines",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8080",
+                                                 "path":  [
+                                                              "api",
+                                                              "mock",
+                                                              "bolsines"
+                                                          ]
+                                             }
+                                 },
+                     "response":  [
+                                      {
+                                          "name":  "200 ok",
+                                          "originalRequest":  {
+                                                                  "method":  "GET",
+                                                                  "header":  [
+
+                                                                             ],
+                                                                  "url":  {
+                                                                              "raw":  "http://localhost:8080/api/mock/bolsines",
+                                                                              "protocol":  "http",
+                                                                              "host":  [
+                                                                                           "localhost"
+                                                                                       ],
+                                                                              "port":  "8080",
+                                                                              "path":  [
+                                                                                           "api",
+                                                                                           "mock",
+                                                                                           "bolsines"
+                                                                                       ]
+                                                                          }
+                                                              },
+                                          "status":  "OK",
+                                          "code":  200,
+                                          "_postman_previewlanguage":  null,
+                                          "header":  [
+                                                         {
+                                                             "key":  "Content-Type",
+                                                             "value":  "application/json"
+                                                         },
+                                                         {
+                                                             "key":  "Transfer-Encoding",
+                                                             "value":  "chunked"
+                                                         },
+                                                         {
+                                                             "key":  "Date",
+                                                             "value":  "Sat, 07 Mar 2026 21:00:34 GMT"
+                                                         },
+                                                         {
+                                                             "key":  "Keep-Alive",
+                                                             "value":  "timeout=60"
+                                                         },
+                                                         {
+                                                             "key":  "Connection",
+                                                             "value":  "keep-alive"
+                                                         }
+                                                     ],
+                                          "cookie":  [
+
+                                                     ],
+                                          "body":  "[\n    {\n        \"numeroBolsin\": 101,\n        \"codigoComisionMedicaOrigen\": \"CM-CBA-01\",\n        \"codigoComisionMedicaDestino\": \"CM-ROS-02\",\n        \"latitud\": -31.4201,\n        \"longitud\": -64.1888,\n        \"fechaHoraUltimaActualizacion\": \"2026-03-07T12:30:00\"\n    },\n    {\n        \"numeroBolsin\": 102,\n        \"codigoComisionMedicaOrigen\": \"CM-ROS-02\",\n        \"codigoComisionMedicaDestino\": \"CM-MDZ-03\",\n        \"latitud\": -32.9468,\n        \"longitud\": -60.6393,\n        \"fechaHoraUltimaActualizacion\": \"2026-03-07T12:32:15\"\n    },\n    {\n        \"numeroBolsin\": 103,\n        \"codigoComisionMedicaOrigen\": \"CM-MDZ-03\",\n        \"codigoComisionMedicaDestino\": \"CM-BA-01\",\n        \"latitud\": -32.8895,\n        \"longitud\": -68.8458,\n        \"fechaHoraUltimaActualizacion\": \"2026-03-07T12:35:04\"\n    },\n    {\n        \"numeroBolsin\": 104,\n        \"codigoComisionMedicaOrigen\": \"CM-BA-01\",\n        \"codigoComisionMedicaDestino\": \"CM-CBA-01\",\n        \"latitud\": -34.6037,\n        \"longitud\": -58.3816,\n        \"fechaHoraUltimaActualizacion\": \"2026-03-07T12:36:20\"\n    },\n    {\n        \"numeroBolsin\": 105,\n        \"codigoComisionMedicaOrigen\": \"CM-TUC-01\",\n        \"codigoComisionMedicaDestino\": \"CM-SLA-01\",\n        \"latitud\": -26.8083,\n        \"longitud\": -65.2176,\n        \"fechaHoraUltimaActualizacion\": \"2026-03-07T12:40:31\"\n    },\n    {\n        \"numeroBolsin\": 106,\n        \"codigoComisionMedicaOrigen\": \"CM-SLA-01\",\n        \"codigoComisionMedicaDestino\": \"CM-JUJ-01\",\n        \"latitud\": -24.7829,\n        \"longitud\": -65.4232,\n        \"fechaHoraUltimaActualizacion\": \"2026-03-07T12:43:18\"\n    },\n    {\n        \"numeroBolsin\": 107,\n        \"codigoComisionMedicaOrigen\": \"CM-NQN-01\",\n        \"codigoComisionMedicaDestino\": \"CM-MDQ-01\",\n        \"latitud\": -38.9516,\n        \"longitud\": -68.0591,\n        \"fechaHoraUltimaActualizacion\": \"2026-03-07T12:45:46\"\n    },\n    {\n        \"numeroBolsin\": 108,\n        \"codigoComisionMedicaOrigen\": \"CM-MDQ-01\",\n        \"codigoComisionMedicaDestino\": \"CM-BA-01\",\n        \"latitud\": -38.0055,\n        \"longitud\": -57.5426,\n        \"fechaHoraUltimaActualizacion\": \"2026-03-07T12:47:02\"\n    },\n    {\n        \"numeroBolsin\": 109,\n        \"codigoComisionMedicaOrigen\": \"CM-LPL-01\",\n        \"codigoComisionMedicaDestino\": \"CM-CBA-01\",\n        \"latitud\": -34.9215,\n        \"longitud\": -57.9545,\n        \"fechaHoraUltimaActualizacion\": \"2026-03-07T12:49:27\"\n    },\n    {\n        \"numeroBolsin\": 110,\n        \"codigoComisionMedicaOrigen\": \"CM-CBA-02\",\n        \"codigoComisionMedicaDestino\": \"CM-ROS-02\",\n        \"latitud\": -31.4167,\n        \"longitud\": -64.1833,\n        \"fechaHoraUltimaActualizacion\": \"2026-03-07T12:52:09\"\n    }\n]"
+                                      }
+                                  ]
+                 },
+                 {
+                     "name":  "getBolsinLocation (xtr-4500)",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+                                                    {
+                                                        "key":  "X-API-Key",
+                                                        "value":  "sk_xtr_9F3a7C21bE6d4A10f2c8e5b7d913"
+                                                    }
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8080/api/xtr-4500l/getBolsinLocation?numeroBolsin=101\u0026codigoComisionMedicaOrigen=CM-CBA-01",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8080",
+                                                 "path":  [
+                                                              "api",
+                                                              "xtr-4500l",
+                                                              "getBolsinLocation"
+                                                          ],
+                                                 "query":  [
+                                                               {
+                                                                   "key":  "numeroBolsin",
+                                                                   "value":  "101"
+                                                               },
+                                                               {
+                                                                   "key":  "codigoComisionMedicaOrigen",
+                                                                   "value":  "CM-CBA-01"
+                                                               }
+                                                           ]
+                                             }
+                                 },
+                     "response":  [
+
+                                  ]
+                 },
+                 {
+                     "name":  "retrieveTrackingData(navtrack-qx-7a)",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+                                                    {
+                                                        "key":  "X-API-Key",
+                                                        "value":  "sk_nav_7b61d9e4c3a2485fae10c77d5b2f"
+                                                    }
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8080/api/navtrack-qx-7a/retrieveTrackingData?numeroBolsin=101\u0026codigoComisionMedicaDestino=CM-ROS-02",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8080",
+                                                 "path":  [
+                                                              "api",
+                                                              "navtrack-qx-7a",
+                                                              "retrieveTrackingData"
+                                                          ],
+                                                 "query":  [
+                                                               {
+                                                                   "key":  "numeroBolsin",
+                                                                   "value":  "101"
+                                                               },
+                                                               {
+                                                                   "key":  "codigoComisionMedicaDestino",
+                                                                   "value":  "CM-ROS-02"
+                                                               }
+                                                           ]
+                                             }
+                                 },
+                     "response":  [
+                                      {
+                                          "name":  "200 ok",
+                                          "originalRequest":  {
+                                                                  "method":  "GET",
+                                                                  "header":  [
+                                                                                 {
+                                                                                     "key":  "X-API-Key",
+                                                                                     "value":  "sk_nav_7b61d9e4c3a2485fae10c77d5b2f"
+                                                                                 }
+                                                                             ],
+                                                                  "url":  {
+                                                                              "raw":  "http://localhost:8080/api/navtrack-qx-7a/retrieveTrackingData?numeroBolsin=101\u0026codigoComisionMedicaDestino=CM-ROS-02",
+                                                                              "protocol":  "http",
+                                                                              "host":  [
+                                                                                           "localhost"
+                                                                                       ],
+                                                                              "port":  "8080",
+                                                                              "path":  [
+                                                                                           "api",
+                                                                                           "navtrack-qx-7a",
+                                                                                           "retrieveTrackingData"
+                                                                                       ],
+                                                                              "query":  [
+                                                                                            {
+                                                                                                "key":  "numeroBolsin",
+                                                                                                "value":  "101"
+                                                                                            },
+                                                                                            {
+                                                                                                "key":  "codigoComisionMedicaDestino",
+                                                                                                "value":  "CM-ROS-02"
+                                                                                            }
+                                                                                        ]
+                                                                          }
+                                                              },
+                                          "status":  "OK",
+                                          "code":  200,
+                                          "_postman_previewlanguage":  null,
+                                          "header":  [
+                                                         {
+                                                             "key":  "Content-Type",
+                                                             "value":  "text/plain;charset=UTF-8"
+                                                         },
+                                                         {
+                                                             "key":  "Content-Length",
+                                                             "value":  "38"
+                                                         },
+                                                         {
+                                                             "key":  "Date",
+                                                             "value":  "Sat, 07 Mar 2026 21:04:53 GMT"
+                                                         },
+                                                         {
+                                                             "key":  "Keep-Alive",
+                                                             "value":  "timeout=60"
+                                                         },
+                                                         {
+                                                             "key":  "Connection",
+                                                             "value":  "keep-alive"
+                                                         }
+                                                     ],
+                                          "cookie":  [
+
+                                                     ],
+                                          "body":  "101,-31.4201,-64.1888,2026-03-07T12:30"
+                                      }
+                                  ]
+                 },
+                 {
+                     "name":  "fetchCargoPositions(geopulse-mtr-900)",
+                     "request":  {
+                                     "method":  "GET",
+                                     "header":  [
+                                                    {
+                                                        "key":  "X-API-Key",
+                                                        "value":  "sk_geo_f2d84a1c9e7345b8a6d1c3f0972e"
+                                                    }
+                                                ],
+                                     "url":  {
+                                                 "raw":  "http://localhost:8080/api/geopulse-mtr-900/fetchCargoPositions?numeroBolsin=101",
+                                                 "protocol":  "http",
+                                                 "host":  [
+                                                              "localhost"
+                                                          ],
+                                                 "port":  "8080",
+                                                 "path":  [
+                                                              "api",
+                                                              "geopulse-mtr-900",
+                                                              "fetchCargoPositions"
+                                                          ],
+                                                 "query":  [
+                                                               {
+                                                                   "key":  "numeroBolsin",
+                                                                   "value":  "101"
+                                                               }
+                                                           ]
+                                             }
+                                 },
+                     "response":  [
+                                      {
+                                          "name":  "200 ok",
+                                          "originalRequest":  {
+                                                                  "method":  "GET",
+                                                                  "header":  [
+                                                                                 {
+                                                                                     "key":  "X-API-Key",
+                                                                                     "value":  "sk_geo_f2d84a1c9e7345b8a6d1c3f0972e"
+                                                                                 }
+                                                                             ],
+                                                                  "url":  {
+                                                                              "raw":  "http://localhost:8080/api/geopulse-mtr-900/fetchCargoPositions?numeroBolsin=101",
+                                                                              "protocol":  "http",
+                                                                              "host":  [
+                                                                                           "localhost"
+                                                                                       ],
+                                                                              "port":  "8080",
+                                                                              "path":  [
+                                                                                           "api",
+                                                                                           "geopulse-mtr-900",
+                                                                                           "fetchCargoPositions"
+                                                                                       ],
+                                                                              "query":  [
+                                                                                            {
+                                                                                                "key":  "numeroBolsin",
+                                                                                                "value":  "101"
+                                                                                            }
+                                                                                        ]
+                                                                          }
+                                                              },
+                                          "status":  "OK",
+                                          "code":  200,
+                                          "_postman_previewlanguage":  null,
+                                          "header":  [
+                                                         {
+                                                             "key":  "Content-Type",
+                                                             "value":  "application/json"
+                                                         },
+                                                         {
+                                                             "key":  "Transfer-Encoding",
+                                                             "value":  "chunked"
+                                                         },
+                                                         {
+                                                             "key":  "Date",
+                                                             "value":  "Sat, 07 Mar 2026 21:06:03 GMT"
+                                                         },
+                                                         {
+                                                             "key":  "Keep-Alive",
+                                                             "value":  "timeout=60"
+                                                         },
+                                                         {
+                                                             "key":  "Connection",
+                                                             "value":  "keep-alive"
+                                                         }
+                                                     ],
+                                          "cookie":  [
+
+                                                     ],
+                                          "body":  "[\n    [\n        101,\n        -31.4201,\n        -64.1888,\n        \"2026-03-07T12:30\"\n    ]\n]"
+                                      }
+                                  ]
+                 }
+             ]
+}
+
+

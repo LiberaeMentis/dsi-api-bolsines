@@ -1,0 +1,39 @@
+@baseUrl = http://localhost:8080
+@apiKeyXtr = sk_xtr_9F3a7C21bE6d4A10f2c8e5b7d913
+@apiKeyNavTrack = sk_nav_7b61d9e4c3a2485fae10c77d5b2f
+@apiKeyGeoPulse = sk_geo_f2d84a1c9e7345b8a6d1c3f0972e
+
+### Health
+GET {{baseUrl}}/health
+
+### Obtener todos los bolsines mock
+GET {{baseUrl}}/api/mock/bolsines
+
+### Obtener un bolsin mock por numero
+GET {{baseUrl}}/api/mock/bolsines/101
+
+### XTR-4500L - getBolsinLocation (OK)
+GET {{baseUrl}}/api/xtr-4500l/getBolsinLocation?numeroBolsin=101&codigoComisionMedicaOrigen=CM-CBA-01
+X-API-Key: {{apiKeyXtr}}
+
+### XTR-4500L - API key invalida (401)
+GET {{baseUrl}}/api/xtr-4500l/getBolsinLocation?numeroBolsin=101&codigoComisionMedicaOrigen=CM-CBA-01
+X-API-Key: API_KEY_INVALIDA
+
+### NavTrack QX-7A - retrieveTrackingData (OK, text/plain)
+GET {{baseUrl}}/api/navtrack-qx-7a/retrieveTrackingData?numeroBolsin=101&codigoComisionMedicaDestino=CM-ROS-02
+X-API-Key: {{apiKeyNavTrack}}
+
+### NavTrack QX-7A - codigo de destino no coincide (404)
+GET {{baseUrl}}/api/navtrack-qx-7a/retrieveTrackingData?numeroBolsin=101&codigoComisionMedicaDestino=CM-XXX-99
+X-API-Key: {{apiKeyNavTrack}}
+
+### GeoPulse MTR-900 - fetchCargoPositions (OK)
+GET {{baseUrl}}/api/geopulse-mtr-900/fetchCargoPositions?numeroBolsin=101
+X-API-Key: {{apiKeyGeoPulse}}
+
+### GeoPulse MTR-900 - bolsin no existe (404)
+GET {{baseUrl}}/api/geopulse-mtr-900/fetchCargoPositions?numeroBolsin=999
+X-API-Key: {{apiKeyGeoPulse}}
+
+
