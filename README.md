@@ -15,6 +15,8 @@ Backend REST mock en Java + Spring Boot para simular 3 modelos de GPS Tracker en
 - [Estructura del proyecto](#estructura-del-proyecto)
 - [Sugerencias de conexion de clientes](#sugerencias-de-conexion-de-clientes)
 
+Por consultas sobre esta API, dirigirse a la Ing. Sol Vega (vegamsol01@gmail.com).
+
 ## Requisitos
 
 - Java 17
